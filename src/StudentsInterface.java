@@ -1,6 +1,6 @@
 import java.util.List;
 
 public interface StudentsInterface {
-    List<Students> getAllStudents();
+    List<Students> getStudents();
     void addStudent(String name);
 }

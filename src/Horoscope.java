@@ -9,7 +9,7 @@ public class Horoscope {
         this._student = student;
     }
 
-    public String getVerdict(Students student){
+    public String getResult(Students student){
         String name = student.getName().toLowerCase();
         int counter = 0;
         String strC;
@@ -30,14 +30,14 @@ public class Horoscope {
         return "bad";
     }
 
-    public String getHoroscopeMessage(Students student){
-        String result = getVerdict(student);
+    public String getMessages(Students student){
+        String result = getResult(student);
 
         return student.getName() + " is going to have a " + result + " day today";
     }
 
-    public void printAllHoroscopeResult(){
-        List<Students> allStudents = _student.getAllStudents();
+    public void printResults(){
+        List<Students> allStudents = _student.getStudents();
 
         if(allStudents.isEmpty()){
             System.out.println("No students");
@@ -45,7 +45,7 @@ public class Horoscope {
         }
 
         for(Students s: allStudents){
-            System.out.println(getHoroscopeMessage(s));
+            System.out.println(getMessages(s));
         }
     }
 

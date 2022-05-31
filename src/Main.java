@@ -25,7 +25,7 @@ public class Main {
             switch(option){
                 case 1:{
                     horoscope = new Horoscope(fileXML);
-                    horoscope.printAllHoroscopeResult();
+                    horoscope.printResults();
                     break;
                 }
 

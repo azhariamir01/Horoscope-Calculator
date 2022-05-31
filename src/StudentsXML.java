@@ -25,7 +25,7 @@ public class StudentsXML implements StudentsInterface {
     }
 
     @Override
-    public List<Students> getAllStudents() {
+    public List<Students> getStudents() {
         List<Students> allStudents = new ArrayList<>();
 
         try {

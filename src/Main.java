@@ -8,9 +8,9 @@ public class Main {
 
         Horoscope horoscope;
 
-        boolean sw = true;
+        int sw = 1;
 
-        while(sw){
+        while(sw != 0){
             System.out.println("MENU");
             System.out.println("Select an option:");
             System.out.println("1. Get horoscope result for all of the students in the XML file");
@@ -38,7 +38,7 @@ public class Main {
                 }
 
                 default:{
-                    sw = false;
+                    sw = 0;
                     break;
                 }
             }
